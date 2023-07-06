@@ -10,6 +10,7 @@
 		177B10022A571F2300C1E64E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177B10012A571F2300C1E64E /* AppDelegate.swift */; };
 		177B10062A571F2300C1E64E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177B10052A571F2300C1E64E /* HomeViewController.swift */; };
 		177B100B2A571F2400C1E64E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 177B100A2A571F2400C1E64E /* Assets.xcassets */; };
+		177B10192A57292800C1E64E /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177B10182A57292800C1E64E /* UIView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +18,7 @@
 		177B10012A571F2300C1E64E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		177B10052A571F2300C1E64E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		177B100A2A571F2400C1E64E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		177B10182A57292800C1E64E /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,11 +51,36 @@
 		177B10002A571F2300C1E64E /* ChessChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				177B10012A571F2300C1E64E /* AppDelegate.swift */,
-				177B10052A571F2300C1E64E /* HomeViewController.swift */,
-				177B100A2A571F2400C1E64E /* Assets.xcassets */,
+				177B10172A57290900C1E64E /* Extensions */,
+				177B10162A5728B600C1E64E /* Resources */,
+				177B10152A5728AE00C1E64E /* ViewControllers */,
 			);
 			path = ChessChallenge;
+			sourceTree = "<group>";
+		};
+		177B10152A5728AE00C1E64E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				177B10052A571F2300C1E64E /* HomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		177B10162A5728B600C1E64E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				177B10012A571F2300C1E64E /* AppDelegate.swift */,
+				177B100A2A571F2400C1E64E /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		177B10172A57290900C1E64E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				177B10182A57292800C1E64E /* UIView+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				177B10192A57292800C1E64E /* UIView+Extension.swift in Sources */,
 				177B10062A571F2300C1E64E /* HomeViewController.swift in Sources */,
 				177B10022A571F2300C1E64E /* AppDelegate.swift in Sources */,
 			);
