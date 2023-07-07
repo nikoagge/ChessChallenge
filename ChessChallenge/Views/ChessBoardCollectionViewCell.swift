@@ -1,5 +1,5 @@
 //
-//  ChessboardCollectionViewCell.swift
+//  ChessBoardCollectionViewCell.swift
 //  ChessChallenge
 //
 //  Created by Nikos Aggelidis on 6/7/23.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class ChessboardCollectionViewCell: UICollectionViewCell {
+final class ChessBoardCollectionViewCell: UICollectionViewCell {
     private let positionLabel = UILabel.newAutoLayout()
     
     override init(frame: CGRect) {
@@ -22,11 +22,14 @@ final class ChessboardCollectionViewCell: UICollectionViewCell {
     
     func configure(with highlighted: Bool) {
         positionLabel.text = ""
-        contentView.backgroundColor = highlighted ? .green : .white
+        
+        backgroundColor = highlighted ? .green : .white
     }
 }
 
-private extension ChessboardCollectionViewCell {
+// MARK: - Private
+
+private extension ChessBoardCollectionViewCell {
     func setupUI() {
         setupPositionLabel()
     }
