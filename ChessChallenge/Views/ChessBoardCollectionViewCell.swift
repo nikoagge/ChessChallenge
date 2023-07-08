@@ -20,10 +20,13 @@ final class ChessBoardCollectionViewCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func configure(with highlighted: Bool) {
-        positionLabel.text = ""
-        
-        backgroundColor = highlighted ? .green : .white
+    func configure(
+        rowNumber: Int,
+        columnNumber: Int,
+        highlighted: Bool
+    ) {
+        positionLabel.text = "\(rowNumber), \(matchColumnNumberWithLetter(for: columnNumber))"
+        backgroundColor = highlighted ? .black : .white
     }
 }
 
@@ -38,5 +41,32 @@ private extension ChessBoardCollectionViewCell {
         positionLabel.textAlignment = .center
         contentView.addSubview(positionLabel)
         positionLabel.fillToSuperview()
+    }
+    
+    func matchColumnNumberWithLetter(for columnNumber: Int) -> String {
+        switch columnNumber {
+        case 0:
+            return "A"
+        case 1:
+            return "B"
+            
+        case 2:
+            return "C"
+            
+        case 3:
+            return "D"
+            
+        case 4:
+            return "E"
+            
+        case 5:
+            return "F"
+            
+        case 6:
+            return "G"
+            
+        default:
+            return "H"
+        }
     }
 }
